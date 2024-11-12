@@ -58,7 +58,7 @@ def generate_random_password(length=12, complexity="medium", include_upper=True,
         characters = ''.join(c for c in characters if c not in excludes)  # 제외할 문자가 있으면 문자 집합에서 제거
 
     # ------------------------------------------------------------------
-    # 문자 집합이 비어있으면 오류 발생
+    # 문자 집합이 비어있으면 오류 발생.
     # 사용자가 문자 집합을 선택하지 않으면 ValueError를 발생시킵니다.
     # ------------------------------------------------------------------
     if not characters:
